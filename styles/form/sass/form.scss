@@ -1,0 +1,42 @@
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+input, select, textarea {
+  margin-top: 10px;
+  border: 1px solid darkred;
+  background-color: lightblue;
+  color: #02baab;
+}
+
+h3 {
+  color: darkgrey;
+}
+
+.radio-choice, .checkbox-choices{
+  label {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    margin: 0 0 0 5px;
+  }
+}
+
+button {
+  padding: 10px;
+  border: 2px solid #02baab;
+  background-color: white;
+  color: #02baab;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: #02baab;
+    color: white;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>form</title>
+
+    <link href="../styles/form/stylesheets/form.css" type="text/css" rel="stylesheet">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <form>
+
+        <label>
+            Enter your name
+            <input type="text" name="userName">
+        </label>
+
+        <label>
+            Enter your email
+            <input type="email" name="userEmail">
+        </label>
+
+        <label>
+            Tell us why have you chosen to enter your email
+            <textarea name="reason"></textarea>
+        </label>
+
+        <label>
+            Choose your favourite language
+            <select name="fav-lang">
+
+                <option value="c++">C++</option>
+
+                <option value="go">Go</option>
+
+                <option value="js">JS</option>
+
+                <option value="basic">Basic</option>
+
+            </select>
+        </label>
+
+        <div class="radio-choice">
+
+            <h3>Are you here?</h3>
+
+            <label>
+                I'm here
+                <input type="radio" name="presence" value="here">
+            </label>
+
+            <label>
+                I'm not here
+                <input type="radio" name="presence" value="somewhere">
+            </label>
+
+            <label>
+                Hard question:(
+                <input type="radio" name="presence" value="hard">
+            </label>
+
+        </div>
+
+        <div class="checkbox-choices">
+
+            <h3>Your favourite number:</h3>
+
+            <label>
+                7
+                <input type="checkbox" name="fav-num" value="7">
+            </label>
+
+            <label>
+                17
+                <input type="checkbox" name="fav-num" value="17">
+            </label>
+
+            <label>
+                2777
+                <input type="checkbox" name="fav-num" value="2777">
+            </label>
+
+        </div>
+
+        <button type="submit">Submit!</button>
+
+    </form>
+
+    <script src="../scripts/form.js"></script>
+
+</body>
+
+</html>
