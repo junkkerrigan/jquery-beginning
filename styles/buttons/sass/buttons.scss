@@ -1,3 +1,23 @@
 .not-displayed, .hidden-text {
   display: none;
 }
+
+span {
+  color: blue;
+  font-size: 1.3em;
+  margin: 0 10px;
+}
+
+button {
+  margin: 0 0 10px 20px;
+  padding: 10px;
+  border: 2px solid #02baab;
+  background-color: white;
+  color: #02baab;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: #02baab;
+    color: white;
+  }
+}

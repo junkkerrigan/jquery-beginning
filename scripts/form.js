@@ -63,5 +63,6 @@ $('input').keydown( function () {
 });
 
 $('textarea').keyup( function () {
-    alert('You have entered the symbol `' + $(this).val() + '`');
+    alert('You have entered the symbol `' +
+        $(this).val()[$(this).val().length - 1] + '`');
 });
