@@ -66,3 +66,10 @@ $('textarea').keyup( function () {
     alert('You have entered the symbol `' +
         $(this).val()[$(this).val().length - 1] + '`');
 });
+
+$('input[type=text]').change( function () {
+    var InputName = $(this).attr('name'), InputVal = $(this).val();
+   $('input[type=text]').each( function () {
+      if($(this).attr('name')!=InputName) $(this).val(InputVal);
+   });
+});
