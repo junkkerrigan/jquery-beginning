@@ -58,7 +58,7 @@ $('form').submit( function () {
    return false;
 });
 
-$('input').keydown( function () {
+$('input[type=text]').keydown( function () {
    alert('You`re trying to enter the symbol');
 });
 
