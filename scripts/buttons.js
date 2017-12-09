@@ -32,7 +32,7 @@ $('.trigger-alert-onclick').on('click', function () {
 });
 
 $('.clone-this').on('click', function () {
-    $(this).clone(true).addClass('cloned').appendTo('.clone-wrapper');
+    $(this).clone(true).addClass('cloned').appendTo('.action-clone');
     $('.clone-this.cloned').text('Clone Me!(cloned)');
 });
 

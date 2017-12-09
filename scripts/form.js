@@ -1,9 +1,12 @@
+const TextInput=$('input[type=text]'),
+    TextArea=$('textarea');
+
 $('input[type!=checkbox]').change( function () {
     var ValueOfInput = $(this).val();
     console.log($(this).attr('name') + ' changed: ' + ValueOfInput);
 });
 
-$('textarea').change( function () {
+TextArea.change( function () {
     var ValueOfInput = $(this).val();
     console.log($(this).attr('name') + ' changed: ' + ValueOfInput);
 });
@@ -58,16 +61,16 @@ $('form').submit( function () {
    return false;
 });
 
-$('input[type=text]').keydown( function () {
+TextInput.keydown( function () {
    alert('You`re trying to enter the symbol');
 });
 
-$('textarea').keyup( function () {
+TextArea.keyup( function () {
     alert('You have entered the symbol `' +
         $(this).val()[$(this).val().length - 1] + '`');
 });
 
-$('input[type=text]').change( function () {
+TextArea.change( function () {
     var InputName = $(this).attr('name'), InputVal = $(this).val();
    $('input[type=text]').each( function () {
       if($(this).attr('name')!=InputName) $(this).val(InputVal);
